@@ -12,6 +12,3 @@ draw_set_font(font_PixelOperator);
 draw_text_ext(speaker.x - 280, speaker.y - 290, text, 13, sprite_width - 10);
 
 draw_set_font(font);
-
-//draw_text_ext(x + padding, y + padding, text, 10, 150);
-//draw_sprite(spr_textbox, 0, x, y);

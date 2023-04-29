@@ -6,6 +6,7 @@ function GameOver(){
 	&& o_breakable.can_interact_kitchen_open = true
 	&& global.humanAway == false)
 	{
-		room_goto(Room_Game_Over);
+		//room_goto(Room_Game_Over);
+		global.room_location = 3;
 	}
 }

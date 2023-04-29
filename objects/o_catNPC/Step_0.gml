@@ -25,7 +25,9 @@ if(collision_rectangle(x - sprite_width / 2, y - sprite_height / 2, x + sprite_w
 		{
 			Say("FARM CAT: Thank you for helping me out. You're a great pal!", self);	
 			questProgress = 2;
+			global.RoomEnds = true;
 		}
 	}
 }
+
 

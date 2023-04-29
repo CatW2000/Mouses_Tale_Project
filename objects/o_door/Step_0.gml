@@ -7,7 +7,8 @@ if (place_meeting(x, y + 50, o_Player))
 {
 	if (global.Interact && global.humanAway == true)
 	{
-		room_goto(Room_Park);	
+		//room_goto(Room_Park);	
+		global.RoomEnds = true;
 	}
 }
 
