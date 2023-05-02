@@ -11,8 +11,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Mouses_Tale_Demo",
+    "path": "Mouses_Tale_Demo.yyp",
   },
   "parentObjectId": null,
   "persistent": false,
