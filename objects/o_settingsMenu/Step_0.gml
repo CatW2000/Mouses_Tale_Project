@@ -21,12 +21,12 @@ if _move != 0
 	//var _size = array_length_2d(menu_item, sub_menu)
 	var _size = array_length(menu_item[sub_menu]);
 	if (index < 0)
-	{
-		index = _size - 1;			//at start, so loop to menu end
+	{	//at start, so loop to menu end
+		index = _size - 1;			
 	}
 	else if (index >= _size)
-	{
-		index = 0;	//at end, so loop to menu start
+	{	//at end, so loop to menu start
+		index = 0;	
 	}
 }
 

@@ -9,15 +9,9 @@ for (var i = 0; i < array_length(menu_item[sub_menu]); i++)
 {
 	draw_set_color(c_white);
 	if (i == index)  {  draw_set_color(c_yellow);  }
-	
-	if is_array(menu_item[sub_menu][i])
-	{
-		var menu_array = menu_item[sub_menu][i];	
-	}
-	else
-	{
-		var _str = menu_item[sub_menu][i];
-	}
+
+	var _str = menu_item[sub_menu][i];
+
 	draw_text(half_gui_width + s_border, half_gui_height + s_border + s_space * i, _str);
 }
 

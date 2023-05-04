@@ -3,7 +3,6 @@
 
 setGUIlayer();
 
-
 //main menu submenu 0:
 menu_item[0][0] = "Controls";
 menu_item[0][1] = "Main Menu";

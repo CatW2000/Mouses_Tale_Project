@@ -4,7 +4,7 @@
 draw_sprite(spr_textbox, 0, speaker.x - 280, speaker.y - 280);
 
 
-var padding = (sprite_width * 0.1);
+//var padding = (sprite_width * 0.1);
 var font = draw_get_font();
 draw_set_font(font_PixelOperator);
 

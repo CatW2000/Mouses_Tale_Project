@@ -18,8 +18,3 @@ if (place_meeting(x, y, o_Player) && can_interact = true)
 		}
 	}
 }
-
-if(global.kitchen_open = true)
-{
-	can_interact_kitchen_open = true;
-}

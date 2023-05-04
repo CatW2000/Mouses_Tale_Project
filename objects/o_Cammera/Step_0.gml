@@ -1,12 +1,12 @@
 /// @description update camera
 
-if (instance_exists(follow))	//if player exists, follow player
+if (instance_exists(follow))
 {
 	xTo = follow.x;
 	yTo = follow.y;
 }
 
-//update object pos
+//update camera object position
 x += (xTo - x) / 15;
 y += (yTo - y) / 15;
 

@@ -3,7 +3,7 @@
 
 setGUIlayer();
 
-// Those are setup in Say function
+//Those are setup in Say function
 text = "";
 timer = 0;
 speaker = noone;

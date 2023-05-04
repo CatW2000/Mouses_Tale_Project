@@ -20,26 +20,29 @@ if(x != destinationX)
 	sprite_index = spr_human_walk;
 	
 }
-else if(x != startX)//we are not at the start location, so we wait
+//Not at the start location and at destination, so wait:
+else if(x != startX)
 {
-	// this runs only if the first if statement is false which means we have reached our destination
-	waitAtDestinationTimer -= delta_time / 1000000;// count down the time in seconds every frame.
+	waitAtDestinationTimer -= delta_time / 1000000;
+	//counts down the time in seconds every frame.
 }
 
 if(x == startX || x == destinationX)
 {
-	sprite_index = spr_human_idle;//change back to idle sprite when not walking
+	sprite_index = spr_human_idle;
 }
 
-if(waitAtDestinationTimer <= 0)//wait time is over
-{
-	waitAtDestinationTimer = destinationTimer;//reset wait time
-	if(x != startX) destinationX = startX;//go back to start since we are in one of the locations with a fallen object
+//if wait time is over:
+if(waitAtDestinationTimer <= 0)
+{	//reset wait time:
+	waitAtDestinationTimer = destinationTimer;
+	//make starting location the new destination
+	if(x != startX) destinationX = startX;
 }
 
-// If human is 100px away from starting position (to the right), it's considered "safe" and we can leave.
+//If human is 100px away from starting position then player can leave:
 if(x > startX + 100)  { global.humanAway = true;  }	
 else  { global.humanAway = false;  }
-
+//timer until hint is given:
 if(global.humanAway = true)  { run_hint++;  }
 if(run_hint = 700)  {  showPopUpText("Hint: Use Shift + A / Shift + D to run!", 4);  }
